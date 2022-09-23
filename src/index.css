@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --accent: #23223a;
+}
+
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  position: relative;
+}
+
+main.dashboard {
+  padding: 20px;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.center-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav.navbar {
+  width: 100%;
+  /* height: 60px; */
+  border-bottom: 1px solid #2c2c45;
+  background-color: #23223a;
+  color: #eaebf3;
+}
+
+.nav-inner-wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 0 20px;
+  align-items: center;
+}
+
+
+
+.dash-title {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: #e9eaf5;
+  text-transform: uppercase;
+}
+
+.btn-login {
+  width: 150px;
+  height: 50px;
+  font-weight: 600;
+  background-color: rgb(225, 244, 255);
+  border: 1px solid rgb(85, 115, 196);
+  border-radius: 5px 5px 5px 5px;
+  color: rgb(30, 54, 119);
+}
+
+.emotion-box-wrapper {
+  position: absolute;
+  margin: 20px;
+  right: 0;
+  height: 200px;
+  width: 300px;
+  background-color: rgb(225, 244, 255);
+  border-radius: 5px;
+  border: 1px solid rgb(85, 115, 196);
+}
+
+.emotion-box-wrapper svg {
+  fill: rgb(30, 54, 119);
+  transform: scale(3);
+  margin: 20px;
+}
+
+.emotion-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.emotion-content h4 {
+  color: rgb(30, 54, 119);
+  font-size: 24px;
+}
+
+.stream-button {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 1px solid red;
+  background-color: rgb(255, 214, 214);
+}
+
+.stream-button:hover {
+  background-color: rgb(255, 0, 0);
+  transition: all 0.2s ease-in-out;
+}
+
+.stream-button:hover svg {
+  fill: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.stream-button svg {
+  fill: red;
+  transform: scale(2);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-right ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-right ul li {
+  font-size: 12px;
+  padding: 10px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+}
+
+.nav-right ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-right ul li:hover {
+  background-color: #0d0c19;
+  filter: brightness(1.2);
+  transition: all 0.25s ease-in-out;
+}
+
+/* LOGIN PAGE */
+
+.full-viewport {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.stream-container {
+  display: flex;
+  gap: 10px;
+}
+
+.videoContainer {
+  position: relative;
+  margin-right: 20px;
+}
+
+.videoContainer video {
+  height: 428px;
+  width: 570px;
+}
+
+.control-buttons {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitle {
+  color: #1b1b1b;
+  padding-bottom: 10px;
+}
+
+.subtitle b {
+  color: red;
+}
+
+#canvasOutput {
+  display: none;
+}
+
+.signout-btn {
+  width: 40px;
+  height: 40px;
+  background-color: #4A4C9B;
+  border: none;
+  margin: 10px;
+  border-radius: 5px 5px 5px 5px;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease-in-out;
+
+}
+
+.signout-btn:hover {
+  filter: brightness(1.4);
+  transition: all 0.3s ease-in-out;
+}
+
+.hello-title {
+  padding-bottom: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(30, 54, 119);
+  text-transform: capitalize;
+}
+
+form.add-new-form {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+}
+
+form.add-new-form input {
+  margin: 0 0 20px 0;
+}
+
+.sheet-wrapper {
+  overflow-x: scroll;
+}
+
+.details-row-wrapper {
+  display: flex;
+}
+
+form.details-row-wrapper input {
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 0;
+}
+
+form.details-row-wrapper button {
+  display: none;
+}
+
+.profile-content-wrapper {
+  display: flex;
+  padding: 50px 50px 0 50px;
+}
+
+img.profile-image {
+  width: 150px;
+  border-radius: 8px;
+}
+
+.profile-details-wrapper {
+  width: 100%;
+  margin-left: 80px;
+}
+
+.profile-name {
+  margin-bottom: 50px;
+}
+
+.profile-subheading {
+  font-weight: 300;
+}
+
+.profile-graphs-section {
+  display: flex;
+}
+
+.mark-input {
+  margin: 20px 10px 20px 0px !important;
+}
+
+.fab-button-container {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0 10px 0;
+  right: auto;
+}
+
+.fab-button {
+  margin: 0 10px;
+}
+
+.datatable-wrapper {
+  margin-top: 20px;
+}
+
+.microsoft-logout-btn {
+  width: 150px;
+  height: 50px;
+  font-weight: 600;
+  background-color: rgb(225, 244, 255);
+  border: 1px solid rgb(85, 115, 196);
+  border-radius: 5px 5px 5px 5px;
+  color: rgb(30, 54, 119);
+}
+
+.graph-container {
+  padding: 20px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.graph-legend-indicator {
+  height: 10px;
+  width: 10px;
+
+  display: inline-block;
+  margin: 2px;
+  margin-left: 8px;
+}
+
+.graph-legend-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.graph-legend-element-container {
+  display: flex;
+  align-items: center;
+}
+
+.graph-legend-text {
+  display: inline;
+  margin: 2px;
+}
+
+.graph-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.graph-legend-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

@@ -1,0 +1,42 @@
+.page{
+    /* subtracting height of footer */
+    height: calc(100vh - 30px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 700px;
+    background-color: #23223a;
+    border-radius: 15px;
+    padding: 5px;
+
+    display: flex;
+    align-items: center;
+
+}
+.container > div {
+    width:50%;
+    flex-shrink: 0;
+    flex: 1;
+}
+.leftContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+
+}
+.leftContainer > p{
+    color: white;
+    padding: 20px;
+    font-size: 36px;
+}
+.brandText {
+    color: #26c6da;
+    font-weight: bold;
+  }
+  .introText {
+    line-height: 55px;
+  }

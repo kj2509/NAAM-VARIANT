@@ -1,0 +1,29 @@
+.create-user-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.create-user-form-group {
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(226, 226, 226);
+  background-color: white;
+  padding-top: 24px !important;
+  width: 100%;
+}
+
+.create-user-form-control {
+  padding: 0 24px 0 24px;
+}
+
+.create-user-form-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 48px;
+}

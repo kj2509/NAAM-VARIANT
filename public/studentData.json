@@ -1,0 +1,40 @@
+{
+  "studentInfo": [
+    {
+      "id": 1,
+      "studentName": "Jon",
+      "assignment1": 10,
+      "assignment2": 10,
+      "test1": 15,
+      "test2": 15,
+      "midterm": 20,
+      "final": 20,
+      "total": 90,
+      "predictedTotal": 100
+    },
+    {
+      "id": 2,
+      "studentName": "Sam",
+      "assignment1": 10,
+      "assignment2": 10,
+      "test1": 10,
+      "test2": 10,
+      "midterm": 10,
+      "final": 30,
+      "total": 80,
+      "predictedTotal": 100
+    },
+    {
+      "id": 3,
+      "studentName": "Michelle",
+      "assignment1": 10,
+      "assignment2": 10,
+      "test1": 15,
+      "test2": 15,
+      "midterm": 26,
+      "final": 10,
+      "total": 76,
+      "predictedTotal": 100
+    }
+  ]
+}
